@@ -10,6 +10,10 @@ const input0804 = document.querySelector(".input0804");
 const modal__main0804 = document.querySelector('.modal__main0804');
 const modal__main0801 = document.querySelector('.modal__main0801');
 
+let arr =[]
+let nomer
+let summa
+
 
 pf0804.addEventListener("click", () => {
   pf0804.style.height = "100px";
@@ -75,6 +79,8 @@ m0801.addEventListener('click',()=>{
                          
   }
   const f1 =(event)=>{
+    console.log(nomer);
+    console.log(summa);
     event.stopPropagation()
     create0801()
     create0804()
@@ -88,9 +94,7 @@ m0801.addEventListener('click',()=>{
   send.addEventListener('click',f1)
   input0804.addEventListener('keypress',createMessege)
 
-  let arr =[]
-  let nomer
-  let summa
+ 
 
 function createMessege(event){
  arr.push(event.key) 
